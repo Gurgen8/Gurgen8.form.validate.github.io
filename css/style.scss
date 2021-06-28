@@ -1,0 +1,86 @@
+.form__div{
+
+display: flex;
+justify-content: center;
+
+.form{
+    display: flex;
+    flex-direction: column;
+  border-radius: 5px;
+    padding:100px;
+    background-color: white;
+    box-shadow: 10px 10px 10px black;
+
+    .form__control{
+       
+      position: relative;
+    
+
+      i{
+          position: absolute;
+          right: 0;
+          bottom: 10px;
+          visibility: hidden;
+          font-size: 18px;
+          &:nth-child(1){
+              color: red;
+              right:-10px
+          }
+          &:nth-child(2){
+            color: green;
+            right:-10px
+        }
+      }
+    }
+  
+  
+
+    input{
+        width: 100%;
+        margin-top:50px;
+        height:20px;
+        padding:8px;
+        border-radius: 5px;
+        color:black;
+        font-size: 18px;
+        &:hover{
+            box-shadow: 5px 5px 2px black;
+        }
+    }
+}
+    .btn{
+        width: 110%;
+        height: 50px;
+        margin-top:50px;
+        font-size: 30px;
+        background-color: forestgreen ;
+        &:hover{
+            background-color: black !important;
+            color: gold;
+            border-radius: 5px;
+            border:5px solid gold
+        }
+      
+      
+        
+
+    }
+}
+
+.title{
+    text-align: center;
+    text-decoration: underline blue;
+}
+
+body{
+    background-color: violet;
+}
+
+.small{
+    font-size: 12px !important;
+    position: absolute;
+    bottom: -16px;
+    visibility: hidden;
+    color:red
+}
+
